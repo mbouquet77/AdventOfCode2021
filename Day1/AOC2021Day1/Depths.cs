@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace AOC2021Day1
+﻿namespace AOC2021Day1
 {
     public class Depths
     {
@@ -19,7 +13,7 @@ namespace AOC2021Day1
             var count = 0;
             for (int i = 1; i < DepthsList.Count; i++)
             {
-                if (DepthIncreased(DepthsList[i], DepthsList[i-1]))
+                if (DepthIncreased(DepthsList[i], DepthsList[i - 1]))
                     count++;
             }
             return count;
@@ -35,8 +29,8 @@ namespace AOC2021Day1
             if (DepthsList.Count < 3)
                 return 0;
 
-            var previousSum = DepthsList[0] + DepthsList[1] + DepthsList[2]; 
-            for (int i = 1;i < DepthsList.Count;i++)
+            var previousSum = DepthsList[0] + DepthsList[1] + DepthsList[2];
+            for (int i = 1; i < DepthsList.Count; i++)
             {
                 if (i > DepthsList.Count - 3)
                     return count;

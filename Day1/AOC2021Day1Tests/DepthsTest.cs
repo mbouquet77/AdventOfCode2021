@@ -1,15 +1,14 @@
-using Xunit;
-using NFluent;
-using System;
-using System.Collections.Generic;
 using AOC2021Day1;
+using NFluent;
+using System.Collections.Generic;
+using Xunit;
 
 namespace AOC2021Day1Tests
 {
     public class DepthsTest
     {
         private readonly List<int> _depthsList = new List<int> { 199, 200, 208, 210, 200, 207, 240, 269, 260, 263 };
-        
+
         [Fact]
         public void ExampleTestPart1()
         {
