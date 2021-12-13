@@ -1,0 +1,68 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="AOCFiles\**" />
+    <Compile Remove="Commons\**" />
+    <Compile Remove="Day1\**" />
+    <Compile Remove="Day2\**" />
+    <Compile Remove="Day3\**" />
+    <Compile Remove="Day4\**" />
+    <Compile Remove="Day5\**" />
+    <Compile Remove="Day6\**" />
+    <EmbeddedResource Remove="AOCFiles\**" />
+    <EmbeddedResource Remove="Commons\**" />
+    <EmbeddedResource Remove="Day1\**" />
+    <EmbeddedResource Remove="Day2\**" />
+    <EmbeddedResource Remove="Day3\**" />
+    <EmbeddedResource Remove="Day4\**" />
+    <EmbeddedResource Remove="Day5\**" />
+    <EmbeddedResource Remove="Day6\**" />
+    <None Remove="AOCFiles\**" />
+    <None Remove="Commons\**" />
+    <None Remove="Day1\**" />
+    <None Remove="Day2\**" />
+    <None Remove="Day3\**" />
+    <None Remove="Day4\**" />
+    <None Remove="Day5\**" />
+    <None Remove="Day6\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="AocFiles.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove=".gitattributes" />
+    <None Remove=".gitignore" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.11.0" />
+    <PackageReference Include="NFluent" Version="2.7.2" />
+    <PackageReference Include="NFluent.Analyzer" Version="0.1.0" />
+    <PackageReference Include="xunit" Version="2.4.1" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="2.4.3">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="coverlet.collector" Version="3.1.0">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="Day1\AOC2021Day1\AOC2021Day1.csproj" />
+    <ProjectReference Include="Day2\AOC2021Day2\AOC2021Day2.csproj" />
+    <ProjectReference Include="Day3\AOC2021Day3\AOC2021Day3.csproj" />
+    <ProjectReference Include="Day4\AOC2021Day4\AOC2021Day4.csproj" />
+  </ItemGroup>
+
+</Project>

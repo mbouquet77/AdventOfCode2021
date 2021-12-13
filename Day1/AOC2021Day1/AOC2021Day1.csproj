@@ -17,4 +17,8 @@
     <Compile Remove="UnitTest1.cs" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\Commons\Commons.csproj" />
+  </ItemGroup>
+
 </Project>

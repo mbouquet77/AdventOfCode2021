@@ -22,8 +22,4 @@
     </PackageReference>
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\AOC2021Day2\AOC2021Day2.csproj" />
-  </ItemGroup>
-
 </Project>

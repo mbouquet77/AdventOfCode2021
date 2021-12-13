@@ -1,4 +1,5 @@
-﻿using AOC2021Day1;
+﻿using AOC2021;
+using AOC2021Day1;
 
 namespace AdventOfCode1
 {
@@ -7,7 +8,8 @@ namespace AdventOfCode1
 
         static void Main()
         {
-            string[] lines = File.ReadAllLines(@"..\..\..\..\input.txt");
+            var aocFiles = new AocFiles();
+            var lines = aocFiles.GetArrayFromFile();
 
             var depthsList = lines.Select(int.Parse).ToList();
             Part1(depthsList);

@@ -1,6 +1,8 @@
-﻿using AOC2021Day3;
+﻿using AOC2021;
+using AOC2021Day3;
 
-string[] lines = File.ReadAllLines(@"..\..\..\..\input.txt");
+var aocFiles = new AocFiles();
+var lines = aocFiles.GetArrayFromFile();
 
 Part1(lines.ToList());
 Console.WriteLine("");
